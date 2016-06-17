@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableZuulProxy
-@EnableBinding(Source.class)
+//@EnableBinding(Source.class)
 public class EdgeServiceApplication {
     @Bean
     @LoadBalanced

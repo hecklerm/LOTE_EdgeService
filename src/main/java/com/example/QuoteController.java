@@ -18,8 +18,8 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RefreshScope
 class QuoteController {
-    @Autowired
-    Source source;
+//    @Autowired
+//    Source source;
 
     @Autowired
     RestTemplate restTemplate;
@@ -37,8 +37,8 @@ class QuoteController {
         return defaultQuote;
     }
 
-    @RequestMapping(value = "newquote", method = RequestMethod.POST)
-    public void addNewQuote(@RequestBody Quote quote) {
-        this.source.output().send(MessageBuilder.withPayload(quote).build());
-    }
+//    @RequestMapping(value = "newquote", method = RequestMethod.POST)
+//    public void addNewQuote(@RequestBody Quote quote) {
+//        this.source.output().send(MessageBuilder.withPayload(quote).build());
+//    }
 }
